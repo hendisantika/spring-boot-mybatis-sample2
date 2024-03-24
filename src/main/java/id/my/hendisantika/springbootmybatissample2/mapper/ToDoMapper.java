@@ -23,16 +23,16 @@ import java.util.List;
 @Mapper
 public interface ToDoMapper {
 
-    @Select("SELECT * FROM tbl_todo")
+    @Select("SELECT * FROM t_todo")
     List<TODO> findAll();
 
-    @Select("SELECT * FROM tbl_todo WHERE id = #{id}")
+    @Select("SELECT * FROM t_todo WHERE id = #{id}")
     TODO findById(@Param("id") Long id);
 
-    @Delete("DELETE FROM tbl_todo WHERE id = #{id}")
+    @Delete("DELETE FROM t_todo WHERE id = #{id}")
     int deleteById(@Param("id") Long id);
 
-    @Insert("INSERT INTO tbl_todo(id, title, body) " +
+    @Insert("INSERT INTO t_todo(id, title, body) " +
             " VALUES (#{id}, #{title}, #{body})")
     int createNew(TODO item);
 
