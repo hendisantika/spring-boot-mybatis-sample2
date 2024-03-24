@@ -1,0 +1,4 @@
+TRUNCATE TABLE t_todo;
+
+INSERT INTO t_todo
+VALUES (1, 'TITLE', 'BODY');
