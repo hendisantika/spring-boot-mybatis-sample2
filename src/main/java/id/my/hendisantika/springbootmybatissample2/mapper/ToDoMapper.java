@@ -1,5 +1,6 @@
 package id.my.hendisantika.springbootmybatissample2.mapper;
 
+import id.my.hendisantika.springbootmybatissample2.model.TODO;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
